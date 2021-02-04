@@ -6,10 +6,8 @@ import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router basename="/">
-      <App />
-    </Router>
-  </React.StrictMode>,
+  <Router basename="/">
+    <App />
+  </Router>,
   document.getElementById("root")
 );

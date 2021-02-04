@@ -8,8 +8,30 @@ import {
   CardSubtitle,
   CardBody,
 } from "reactstrap";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const Mywork = () => {
+  // eslint-disable-next-line no-unused-vars
+  const [projectsList, setProjectsList] = useState([]);
+  // eslint-disable-next-line no-unused-vars
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const result = await axios.get("http://localhost:4000/projects");
+        console.log(result);
+        setProjectsList(result.data);
+      } catch (err) {
+        console.log(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchData();
+  }, []);
+
   return (
     <div className="condiv">
       <h1 className="subtopic">My Work</h1>
