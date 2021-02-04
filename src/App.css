@@ -1,0 +1,82 @@
+:root {
+  --sidebar-flex: 1.5;
+  --condiv-flex: 6;
+  --fontsize-p: 1.2rem;
+  --fontsize-nav: 1.6rem;
+  --typing-font: 3rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.condiv {
+  padding: 40px;
+  background-color: #f4f5f9;
+  height: 100vh;
+  flex: var(--condiv-flex);
+}
+
+.condivhome {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.profilepic {
+  border-radius: 70%;
+  width: 150px;
+  margin: 30px;
+}
+.typingeffect {
+  font-size: var(--typing-font);
+  margin-bottom: 30px;
+}
+.subtopic {
+  margin: 10px 10px 30px 10px !important;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 10px;
+}
+
+h1 {
+  color: #08fdd8;
+}
+
+.social {
+  position: absolute;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  bottom: 60px;
+}
+.social a {
+  padding-right: 30px;
+  font-size: 25px;
+  color: #9a9b9c;
+}
+.social a:hover {
+  color: #08fdd8;
+}
+
+.imlinda {
+  font-size: 50px;
+  font-weight: 800;
+  color: #08fdd8;
+}
+
+.javascript {
+  font-size: 25px;
+  font-weight: 200;
+  color: black;
+}
+
+.linknav li a:hover {
+  color: #08fdd8 !important;
+}
