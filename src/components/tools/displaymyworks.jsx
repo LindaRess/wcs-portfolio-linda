@@ -21,7 +21,7 @@ const Displaymyworks = ({
       <CardImg
         top
         width="100%"
-        src="/assets/256x186.svg"
+        src="https://zupimages.net/up/21/05/dn0n.jpg"
         alt="Card image cap"
       />
       <CardBody>
