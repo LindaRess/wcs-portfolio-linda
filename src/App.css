@@ -80,3 +80,10 @@ h1 {
 .linknav li a:hover {
   color: #08fdd8 !important;
 }
+
+.cardscolumslayout {
+  display: inline-block;
+  break-inside: avoid;
+  flex-direction: row;
+  /* column-count: 2; */
+}
