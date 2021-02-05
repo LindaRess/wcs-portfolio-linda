@@ -26,7 +26,7 @@ const Displaymyworks = ({
       />
       <CardBody>
         <CardTitle tag="h5">{title}</CardTitle>
-        <CardSubtitle tag="h6" className="mb-2 text-muted">
+        <CardSubtitle tag="h6" className="mb-2">
           {year_project}
         </CardSubtitle>
         <CardText>{description_project}</CardText>

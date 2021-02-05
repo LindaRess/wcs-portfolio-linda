@@ -8,7 +8,8 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
-import { NavLink as RNV } from "react-router-dom";
+import { NavLink as RNV, Link } from "react-router-dom";
+import "./../../App.css";
 
 const NavbarTop = (props) => {
   const [navLinks] = useState([
@@ -35,9 +36,9 @@ const NavbarTop = (props) => {
 
   return (
     <div>
-      <Navbar color="dark" dark>
-        <NavbarBrand href="/" className="mr-auto">
-          Portfolio LR
+      <Navbar className="navbar" color="dark" dark>
+        <NavbarBrand className="mr-auto">
+          <Link to="/">Portfolio LR</Link>
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>

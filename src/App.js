@@ -7,18 +7,18 @@ import About from "./components/about";
 import Skills from "./components/skills";
 import Mywork from "./components/mywork";
 import Contact from "./components/contact";
-import NavbarTop from "./components/tools/navbar";
+import Navbar from "./components/tools/navbar";
 
 function App() {
   return (
     <div className="App">
-      <NavbarTop />
+      <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/about/" component={About} />
-        <Route path="/skills/" component={Skills} />
-        <Route path="/mywork/" component={Mywork} />
-        <Route path="/contact/" component={Contact} />
+        <Route path="/about" component={About} />
+        <Route path="/skills" component={Skills} />
+        <Route path="/mywork" component={Mywork} />
+        <Route path="/contact" component={Contact} />
       </Switch>
     </div>
   );
